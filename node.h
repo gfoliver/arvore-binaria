@@ -15,6 +15,8 @@ Node *remover(Node *raiz, int valorDesejado);
 
 Node *removerMaior(Node *raiz);
 
+Node *removerMenor(Node *raiz);
+
 void inOrder(Node *raiz);
 void preOrder(Node *raiz);
 void posOrder(Node *raiz);

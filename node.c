@@ -102,3 +102,22 @@ Node *removerMaior(Node *raiz) {
 
 	return atual;
 }
+
+Node *removerMenor(Node *raiz) {
+	if(raiz == NULL){
+		printf("Arvore vazia \n");
+		return NULL;
+	}
+
+	Node *atual = raiz;
+	int menor = 0;
+
+	while (atual != NULL) {
+		menor = atual->valor;
+		atual = atual->esq;
+	}
+
+	remover(raiz, menor);
+
+	return atual;
+}

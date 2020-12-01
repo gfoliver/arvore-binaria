@@ -15,7 +15,7 @@ int main()
 	
     inOrder(raiz);
     //preOrder(raiz);
-    removerMaior(raiz);
+    removerMenor(raiz);
     printf("\n\n");
     inOrder(raiz);
     return 0;
